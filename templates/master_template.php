@@ -79,10 +79,16 @@
 <!-- /container -->
 
 
-<!-- Bootstrap core JavaScript
+<!-- Jquery and Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/components/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="assets/components/jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<script src="assets/components/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+<!--<![endif]-->
 <script src="assets/components/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

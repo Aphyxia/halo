@@ -25,7 +25,13 @@ class users extends Controller
 
     }
 
-    function index_post()
+    function edit()
+    {
+        $user_id = $this->params[0];
+        $this->user = get_first("SELECT * FROM user WHERE user_id = '$user_id'");
+    }
+
+    function POST_index()
     {
         $data = $_POST['data'];
 
@@ -34,7 +40,7 @@ class users extends Controller
         header('Location: ' . BASE_URL . 'users/view/' . $user_id);
     }
 
-    function edit_post()
+    function POST_edit()
     {
         $data = $_POST['data'];
         $data['user_id'] = $this->params[0];
@@ -43,17 +49,12 @@ class users extends Controller
         header('Location: ' . BASE_URL . 'users/view/' . $this->params[0]);
     }
 
-    function delete_post()
+    function POST_delete()
     {
         $user_id = $_POST['user_id'];
         update('user', ['deleted' => '1'], "user_id = '$user_id'");
         exit("1");
     }
 
-    function edit()
-    {
-        $user_id = $this->params[0];
-        $this->user = get_first("SELECT * FROM user WHERE user_id = '$user_id'");
-    }
 
 } 

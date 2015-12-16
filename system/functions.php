@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Display a fancy error page and quit.
  * @param $error_file_name_or_msg string The view file of the specific error (in views/errors folder, without _error_view.php suffix)

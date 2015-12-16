@@ -1,10 +1,10 @@
 <h3>modules</h3>
 <ul class="list-group">
-    <? foreach ($modules as $module): ?>
+    <?php foreach ($modules as $module): ?>
         <li class="list-group-item">
             <a href="modules/<?= $module['module_id'] ?>/<?= $module['module_name'] ?>"><?= $module['module_name'] ?></a>
         </li>
-    <? endforeach ?>
+    <?php endforeach ?>
 </ul>
 
 <?php if ($auth->is_admin): ?>

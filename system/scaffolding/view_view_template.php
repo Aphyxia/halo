@@ -14,7 +14,7 @@
 </table>
 
 <!-- EDIT BUTTON -->
-<? if ($auth->is_admin): ?>
+<?php if ($auth->is_admin): ?>
     <form action="modules/edit/<?= $module['module_id'] ?>">
         <div class="pull-right">
             <button class="btn btn-primary">
@@ -22,4 +22,4 @@
             </button>
         </div>
     </form>
-<? endif; ?>
+<?php endif; ?>

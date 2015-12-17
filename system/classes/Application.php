@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: henno
- * Date: 9/16/13
- * Time: 11:17 PM
- */
 class Application
 {
     public $auth = null;

@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Maile
- * Date: 17.09.14
- * Time: 18:19
- */
 class users extends Controller
 {
     public $requires_auth = true;

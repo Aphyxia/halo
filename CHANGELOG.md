@@ -1,6 +1,10 @@
 Changelog
 ===
 
+**17.12.2015**
+
+1. Cleanup PhpStorm generated code
+
 **16.12.2015**
 
 1. Remove php short tag support
